@@ -1,0 +1,376 @@
+<!-- 345fc9ca4951ea84 -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Una Odontologia | Odontologia do Sono, Saúde e Bem-Estar em Curitiba | Memmotoday</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+--bg:#f7f8fa;
+--card:#ffffff;
+--primary:#1b6b5a;
+--primary-dark:#145448;
+--accent:#c09a5b;
+--text:#1e1e1e;
+--text-light:#555;
+--border:#e4e7eb;
+--radius:8px;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',Roboto,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--primary);text-decoration:none}
+a:hover{color:var(--primary-dark)}
+
+/* NAV */
+.ttk6_nav{background:var(--card);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
+.ttk6_nav-inner{max-width:1100px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.ttk6_nav-brand{font-size:1.25rem;font-weight:700;color:var(--primary-dark);letter-spacing:-.3px}
+.ttk6_nav-brand span{color:var(--accent);font-weight:400;font-size:.85rem;display:block;line-height:1}
+.ttk6_nav-links{display:flex;gap:22px;flex-wrap:wrap}
+.ttk6_nav-links a{font-size:.9rem;color:var(--text-light);font-weight:500;transition:color .2s}
+.ttk6_nav-links a:hover{color:var(--primary)}
+
+/* HERO */
+.ttk6_hero{background:linear-gradient(135deg,#1b6b5a 0%,#145448 100%);color:#fff;padding:72px 20px 62px;text-align:center}
+.ttk6_hero h1{font-size:2.1rem;font-weight:700;margin-bottom:14px;line-height:1.25}
+.ttk6_hero p{font-size:1.05rem;max-width:640px;margin:0 auto 28px;opacity:.92}
+.ttk6_hero-cta{display:inline-block;background:var(--accent);color:#fff;font-weight:700;padding:14px 36px;border-radius:var(--radius);font-size:1rem;transition:background .2s}
+.ttk6_hero-cta:hover{background:#a8843e;color:#fff}
+
+/* SECTION */
+.ttk6_section{max-width:1100px;margin:0 auto;padding:60px 20px}
+.ttk6_section-title{font-size:1.5rem;font-weight:700;margin-bottom:8px;color:var(--primary-dark)}
+.ttk6_section-sub{color:var(--text-light);margin-bottom:36px;max-width:620px}
+
+/* CARDS */
+.ttk6_cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+.ttk6_card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:28px 24px;transition:box-shadow .2s}
+.ttk6_card:hover{box-shadow:0 4px 16px rgba(0,0,0,.06)}
+.ttk6_card-icon{font-size:2rem;margin-bottom:14px}
+.ttk6_card h3{font-size:1.05rem;font-weight:600;margin-bottom:8px}
+.ttk6_card p{font-size:.92rem;color:var(--text-light)}
+
+/* STEPS */
+.ttk6_steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;counter-reset:step}
+.ttk6_step{text-align:center;padding:20px}
+.ttk6_step::before{counter-increment:step;content:counter(step);display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:var(--primary);color:#fff;font-weight:700;font-size:1.1rem;margin-bottom:14px}
+.ttk6_step h3{font-size:1rem;font-weight:600;margin-bottom:6px}
+.ttk6_step p{font-size:.9rem;color:var(--text-light)}
+
+/* INFO BAR */
+.ttk6_info-bar{background:var(--primary);color:#fff;text-align:center;padding:28px 20px}
+.ttk6_info-bar p{max-width:700px;margin:0 auto;font-size:1rem}
+
+/* ABOUT */
+.ttk6_about-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.ttk6_about-text h2{font-size:1.5rem;font-weight:700;color:var(--primary-dark);margin-bottom:12px}
+.ttk6_about-text p{color:var(--text-light);margin-bottom:14px;font-size:.95rem}
+.ttk6_about-img{background:var(--border);border-radius:var(--radius);height:300px;display:flex;align-items:center;justify-content:center;color:var(--text-light);font-size:.85rem}
+
+/* CONTACT */
+.ttk6_contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.ttk6_contact-info h3{font-size:1.15rem;font-weight:600;margin-bottom:16px;color:var(--primary-dark)}
+.ttk6_contact-item{display:flex;gap:12px;margin-bottom:16px;align-items:flex-start}
+.ttk6_contact-item .ttk6_ci-icon{font-size:1.2rem;flex-shrink:0;margin-top:2px}
+.ttk6_contact-item .ttk6_ci-text{font-size:.92rem;color:var(--text-light)}
+.ttk6_contact-item .ttk6_ci-text strong{color:var(--text);font-weight:600}
+.ttk6_contact-form label{display:block;font-size:.85rem;font-weight:600;margin-bottom:4px;color:var(--text)}
+.ttk6_contact-form input,.ttk6_contact-form textarea{width:100%;padding:10px 14px;border:1px solid var(--border);border-radius:var(--radius);font-size:.92rem;margin-bottom:14px;font-family:inherit;background:var(--card)}
+.ttk6_contact-form textarea{resize:vertical;min-height:100px}
+.ttk6_contact-form button{background:var(--primary);color:#fff;font-weight:700;padding:12px 32px;border:none;border-radius:var(--radius);cursor:pointer;font-size:.95rem;transition:background .2s}
+.ttk6_contact-form button:hover{background:var(--primary-dark)}
+
+/* FOOTER */
+.ttk6_footer{background:#1a1a1a;color:#ccc;padding:40px 20px 20px;font-size:.85rem}
+.ttk6_footer-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr 1fr;gap:30px}
+.ttk6_footer h4{color:#fff;font-size:.95rem;margin-bottom:12px}
+.ttk6_footer p,.ttk6_footer a{color:#aaa;font-size:.84rem;line-height:1.7}
+.ttk6_footer a:hover{color:#fff}
+.footer-bottom{max-width:1100px;margin:24px auto 0;padding-top:16px;border-top:1px solid #333;text-align:center;font-size:.8rem;color:#777}
+
+/* MODAL */
+.modal-overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.6);z-index:200;justify-content:center;align-items:center}
+.modal-overlay.active{display:flex}
+.ttk6_modal{background:#fff;max-width:700px;width:95%;max-height:85vh;overflow-y:auto;border-radius:var(--radius);padding:36px 30px}
+.ttk6_modal h2{font-size:1.3rem;margin-bottom:16px;color:var(--primary-dark)}
+.ttk6_modal p{font-size:.9rem;color:var(--text-light);margin-bottom:10px;line-height:1.6}
+.ttk6_modal-close{display:inline-block;margin-top:16px;background:var(--primary);color:#fff;padding:8px 24px;border:none;border-radius:var(--radius);cursor:pointer;font-size:.9rem}
+
+@media(max-width:768px){
+  .ttk6_hero h1{font-size:1.6rem}
+  .ttk6_about-grid,.ttk6_contact-grid,.ttk6_footer-inner{grid-template-columns:1fr}
+  .ttk6_nav-links{gap:14px}
+}
+</style>
+
+<link rel="canonical" href="https://memmotoday.online/">
+<meta name="description" content="Descubra informações exclusivas e conteúdo verificado em memmotoday.online. Acesse agora e confira os detalhes completos.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://memmotoday.online/">
+<meta property="og:site_name" content="memmotoday.online">
+<meta property="og:description" content="Descubra informações exclusivas e conteúdo verificado em memmotoday.online. Acesse agora e confira os detalhes completos.">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:domain" content="memmotoday.online">
+<meta name="generator" content="cms-efb712c4bb7a">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Memmotoday","url":"https://memmotoday.online/","datePublished":"2025-04-19","dateModified":"2025-05-22","inLanguage":"pt-BR","isPartOf":{"@type":"WebSite","name":"Memmotoday","url":"https://memmotoday.online/"},"publisher":{"@type":"Organization","name":"Memmotoday","url":"https://memmotoday.online/"}}</script>
+
+<style>:root{--vjyq-p:rgb(120,252,14);--vjyq-s:rgb(160,218,199);--vjyq-id:'e366b1e0a56e'}@keyframes ezxaczka{from{opacity:1}to{opacity:1}}.hqsqzc{position:absolute;width:0;height:0;overflow:hidden;pointer-events:none}</style>
+<!-- b:k36pg14n7p v2.30.326 -->
+</head>
+<body data-s="8bdcae74" data-p="m5vwgd">
+<noscript><div style="padding:15px;text-align:center;font-size:14px;"><p>JavaScript é necessário para visualizar o conteúdo completo de memmotoday.</p></div></noscript>
+
+<!-- NAV -->
+<nav class="ttk6_nav">
+<div class="ttk6_nav-inner">
+  <div class="ttk6_nav-brand">Una Odontologia<span>Saúde &amp; Bem-Estar</span></div>
+  <div class="ttk6_nav-links">
+    <a href="#servicos">Serviços</a>
+    <a href="#como-funciona">Como Funciona</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+  </div>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="ttk6_hero">
+<h1>Odontologia do Sono, Saúde<br>e Bem-Estar em Curitiba</h1>
+<p>Diagnóstico e tratamento personalizado para distúrbios respiratórios do sono, bruxismo, ronco e apneia obstrutiva. Atendimento com hora marcada no Água Verde.</p>
+<a href="#contato" class="ttk6_hero-cta">Agendar Consulta</a>
+</section>
+
+<!-- SERVIÇOS -->
+<section class="ttk6_section" id="servicos">
+<h2 class="ttk6_section-title">Nossos Serviços</h2>
+<p class="ttk6_section-sub">Oferecemos atendimento integrado do diagnóstico ao tratamento dos distúrbios respiratórios do sono.</p>
+<div class="ttk6_cards">
+  <div class="ttk6_card">
+    <div class="ttk6_card-icon">😮‍💨</div>
+    <h3>Respiração Bucal</h3>
+    <p>Diagnóstico e tratamento de respiração bucal em crianças, jovens e adultos, incluindo abordagem com odontologia miofuncional.</p>
+  </div>
+  <div class="ttk6_card">
+    <div class="ttk6_card-icon">🦷</div>
+    <h3>Bruxismo</h3>
+    <p>Avaliação clínica, diagnóstico e tratamento do bruxismo do sono e da vigília, com acompanhamento personalizado.</p>
+  </div>
+  <div class="ttk6_card">
+    <div class="ttk6_card-icon">😴</div>
+    <h3>Ronco e Apneia do Sono</h3>
+    <p>Diagnóstico e tratamento do ronco e da apneia obstrutiva do sono com aparelhos intraorais de avanço mandibular sob medida.</p>
+  </div>
+  <div class="ttk6_card">
+    <div class="ttk6_card-icon">📊</div>
+    <h3>Exame do Sono</h3>
+    <p>Polissonografia domiciliar com tecnologia de ponta para diagnóstico preciso dos distúrbios respiratórios do sono, com laudo em até 24 horas.</p>
+  </div>
+  <div class="ttk6_card">
+    <div class="ttk6_card-icon">🔬</div>
+    <h3>Odontologia Miofuncional</h3>
+    <p>Tratamento com sistema especializado para correção dos maus hábitos miofuncionais que afetam o desenvolvimento orofacial e a qualidade do sono.</p>
+  </div>
+  <div class="ttk6_card">
+    <div class="ttk6_card-icon">⚙️</div>
+    <h3>Aparelhos Sob Medida</h3>
+    <p>Fabricação de aparelhos e dispositivos intraorais sob medida para correção funcional e tratamento dos distúrbios do sono.</p>
+  </div>
+</div>
+</section>
+
+<!-- INFO BAR -->
+<div class="ttk6_info-bar">
+<p>Atendimento personalizado com horário agendado. Consultório localizado no Ed. Union Tower, Água Verde, Curitiba.</p>
+</div>
+
+<!-- COMO FUNCIONA -->
+<section class="ttk6_section" id="como-funciona">
+<h2 class="ttk6_section-title">Como Funciona</h2>
+<p class="ttk6_section-sub">Do primeiro contato ao acompanhamento contínuo do tratamento.</p>
+<div class="ttk6_steps">
+  <div class="ttk6_step">
+    <h3>Agendamento</h3>
+    <p>Entre em contato pelo telefone, WhatsApp ou formulário do site para agendar sua consulta de avaliação.</p>
+  </div>
+  <div class="ttk6_step">
+    <h3>Diagnóstico</h3>
+    <p>Realizamos avaliação clínica detalhada e, quando indicado, exame do sono domiciliar para diagnóstico preciso.</p>
+  </div>
+  <div class="ttk6_step">
+    <h3>Tratamento</h3>
+    <p>Plano de tratamento personalizado conforme o diagnóstico, com acompanhamento contínuo e ajustes sempre que necessário.</p>
+  </div>
+</div>
+</section>
+
+<!-- SOBRE -->
+<section class="ttk6_section" id="sobre">
+<div class="ttk6_about-grid">
+  <div class="ttk6_about-text">
+    <h2>Sobre a Una Odontologia</h2>
+    <p>Somos uma clínica odontológica especializada em odontologia do sono, saúde e bem-estar, com sede no bairro Água Verde, em Curitiba, PR. Atuamos no diagnóstico e tratamento de distúrbios respiratórios do sono em crianças, jovens e adultos.</p>
+    <p>Nossa equipe clínica oferece atendimento personalizado para condições como respiração bucal, bruxismo, ronco e apneia obstrutiva do sono, utilizando tecnologias atuais e abordagens integradas.</p>
+    <p>Além do atendimento clínico, atuamos na fabricação de aparelhos e dispositivos intraorais sob medida e na realização de exames diagnósticos por registro gráfico, sempre com foco na qualidade de vida e no bem-estar dos nossos pacientes.</p>
+  </div>
+  <div class="ttk6_about-img">Imagem do consultório</div>
+</div>
+</section>
+
+<!-- CONTATO -->
+<section class="ttk6_section" id="contato">
+<h2 class="ttk6_section-title">Contato</h2>
+<p class="ttk6_section-sub">Agende sua consulta ou tire suas dúvidas pelos nossos canais de atendimento.</p>
+<div class="ttk6_contact-grid">
+  <div class="ttk6_contact-info">
+    <h3>Nossos Canais</h3>
+    <div class="ttk6_contact-item">
+      <span class="ttk6_ci-icon">📱</span>
+      <div class="ttk6_ci-text"><strong>Telefone / WhatsApp</strong><br>(41) 98764-7373</div>
+    </div>
+    <div class="ttk6_contact-item">
+      <span class="ttk6_ci-icon">📧</span>
+      <div class="ttk6_ci-text"><strong>E-mail</strong><br>a01014532078@gmail.com</div>
+    </div>
+    <div class="ttk6_contact-item">
+      <span class="ttk6_ci-icon">📍</span>
+      <div class="ttk6_ci-text"><strong>Endereço</strong><br>Av. República Argentina, 1505<br>Sala 1208, 12º Andar — Ed. Union Tower<br>Água Verde — Curitiba, PR<br>CEP 80.620-010</div>
+    </div>
+    <div class="ttk6_contact-item">
+      <span class="ttk6_ci-icon">🕐</span>
+      <div class="ttk6_ci-text"><strong>Horário</strong><br>Atendimento personalizado<br>com horário agendado</div>
+    </div>
+  </div>
+  <div class="ttk6_contact-form">
+    <h3 style="font-size:1.15rem;font-weight:600;margin-bottom:16px;color:var(--primary-dark)">Agendar Consulta</h3>
+    <label for="cf-name">Nome</label>
+    <input type="text" id="cf-name" placeholder="Seu nome completo">
+    <label for="cf-phone">Telefone</label>
+    <input type="tel" id="cf-phone" placeholder="(00) 00000-0000">
+    <label for="cf-msg">Motivo da consulta</label>
+    <textarea id="cf-msg" placeholder="Descreva brevemente sua queixa ou o serviço desejado"></textarea>
+    <button type="button" onclick="alert('Solicitação enviada com sucesso! Retornaremos em breve para confirmar seu agendamento.')">Enviar</button>
+  </div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="ttk6_footer">
+<div class="ttk6_footer-inner">
+  <div>
+    <h4>Una Odontologia</h4>
+    <p>Clínica odontológica especializada em odontologia do sono, saúde e bem-estar. Diagnóstico e tratamento de distúrbios respiratórios do sono em Curitiba, PR.</p>
+  </div>
+  <div>
+    <h4>Links</h4>
+    <p><a href="#servicos">Serviços</a></p>
+    <p><a href="#como-funciona">Como Funciona</a></p>
+    <p><a href="#sobre">Sobre</a></p>
+    <p><a href="#contato">Contato</a></p>
+    <p><a href="#" onclick="document.getElementById('modal-privacidade').classList.add('active');return false">Política de Privacidade</a></p>
+    <p><a href="#" onclick="document.getElementById('modal-termos').classList.add('active');return false">Termos de Uso</a></p>
+  </div>
+  <div>
+    <h4>Contato</h4>
+    <p>Telefone: (41) 98764-7373</p>
+    <p>E-mail: a01014532078@gmail.com</p>
+    <p>Av. República Argentina, 1505<br>Sala 1208, 12º Andar — Ed. Union Tower<br>Água Verde — Curitiba, PR<br>CEP 80.620-010</p>
+  </div>
+</div>
+<div class="footer-bottom">
+  <p>Una Odontologia Digital, Saúde e Bem-Estar Ltda. — CNPJ: 41.601.054/0001-90</p>
+  <p>Av. República Argentina, 1505, Sala 1208, 12º Andar, Ed. Union Tower, Água Verde, Curitiba, PR — CEP 80.620-010</p>
+  <p>© 2026 Una Odontologia — Todos os direitos reservados</p>
+</div>
+</footer>
+
+<!-- MODAL PRIVACIDADE -->
+<div class="modal-overlay" id="modal-privacidade">
+<div class="ttk6_modal">
+<h2>Política de Privacidade</h2>
+<p><strong>Una Odontologia Digital, Saúde e Bem-Estar Ltda.</strong><br>CNPJ: 41.601.054/0001-90<br>Av. República Argentina, 1505, Sala 1208, 12º Andar, Ed. Union Tower, Água Verde, Curitiba, PR — CEP 80.620-010</p>
+
+<p>Esta Política de Privacidade descreve como coletamos, usamos e protegemos as informações pessoais fornecidas por nossos pacientes e visitantes, em conformidade com a Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018).</p>
+
+<p><strong>1. Dados coletados</strong></p>
+<p>Coletamos dados necessários para o atendimento clínico e administrativo: nome, telefone, e-mail, data de nascimento, histórico de saúde e informações clínicas relevantes para diagnóstico e tratamento. Dados de saúde são tratados como dados sensíveis conforme a LGPD.</p>
+
+<p><strong>2. Finalidade do uso</strong></p>
+<p>Os dados coletados são utilizados exclusivamente para: agendamento e acompanhamento de consultas; elaboração de diagnósticos e planos de tratamento; comunicação sobre consultas e procedimentos; emissão de documentos fiscais; cumprimento de obrigações legais e regulatórias do setor de saúde.</p>
+
+<p><strong>3. Compartilhamento</strong></p>
+<p>Não compartilhamos, vendemos nem cedemos dados pessoais ou de saúde a terceiros para fins comerciais. Dados podem ser compartilhados apenas com profissionais de saúde diretamente envolvidos no tratamento do paciente, sempre sob sigilo profissional e nos limites da finalidade clínica.</p>
+
+<p><strong>4. Armazenamento e segurança</strong></p>
+<p>Os dados são armazenados em ambiente seguro, com controle de acesso restrito à equipe clínica e administrativa autorizada. Prontuários e registros clínicos são mantidos conforme a legislação vigente do Conselho Federal de Odontologia e as normas sanitárias aplicáveis.</p>
+
+<p><strong>5. Direitos do titular</strong></p>
+<p>O titular dos dados pode, a qualquer momento, solicitar acesso, correção, exclusão ou portabilidade de seus dados pessoais, entrando em contato pelo e-mail a01014532078@gmail.com ou pelo telefone (41) 98764-7373.</p>
+
+<p><strong>6. Cookies</strong></p>
+<p>Este site pode utilizar cookies para melhorar a experiência de navegação. Cookies não coletam dados pessoais identificáveis e podem ser desabilitados nas configurações do navegador.</p>
+
+<p><strong>7. Alterações</strong></p>
+<p>Esta política pode ser atualizada periodicamente. Recomendamos a consulta regular desta página para ciência de eventuais alterações.</p>
+
+<p>Última atualização: junho de 2026.</p>
+
+<button class="ttk6_modal-close" onclick="this.closest('.modal-overlay').classList.remove('active')">Fechar</button>
+</div>
+</div>
+
+<!-- MODAL TERMOS -->
+<div class="modal-overlay" id="modal-termos">
+<div class="ttk6_modal">
+<h2>Termos de Uso</h2>
+<p><strong>Una Odontologia Digital, Saúde e Bem-Estar Ltda.</strong><br>CNPJ: 41.601.054/0001-90<br>Av. República Argentina, 1505, Sala 1208, 12º Andar, Ed. Union Tower, Água Verde, Curitiba, PR — CEP 80.620-010</p>
+
+<p>Ao acessar e utilizar este site, você concorda com os termos e condições descritos abaixo.</p>
+
+<p><strong>1. Sobre a clínica</strong></p>
+<p>Somos uma clínica odontológica especializada em odontologia do sono, saúde e bem-estar, com atuação no diagnóstico e tratamento de distúrbios respiratórios do sono, bruxismo, respiração bucal, ronco e apneia obstrutiva, além da fabricação de aparelhos intraorais sob medida.</p>
+
+<p><strong>2. Informações do site</strong></p>
+<p>As informações apresentadas neste site possuem caráter informativo e institucional, não substituindo consulta, diagnóstico ou tratamento profissional. Para orientação clínica individualizada, agende uma consulta.</p>
+
+<p><strong>3. Agendamento e atendimento</strong></p>
+<p>Consultas são realizadas mediante agendamento prévio. Cancelamentos ou reagendamentos devem ser comunicados com antecedência mínima de 24 horas.</p>
+
+<p><strong>4. Responsabilidade profissional</strong></p>
+<p>Todos os procedimentos são realizados por profissionais devidamente habilitados e registrados no Conselho Regional de Odontologia, em conformidade com as normas éticas e técnicas da profissão.</p>
+
+<p><strong>5. Propriedade intelectual</strong></p>
+<p>Todo o conteúdo deste site, incluindo textos, imagens e layout, é de propriedade de Una Odontologia Digital, Saúde e Bem-Estar Ltda., protegido pela legislação brasileira de propriedade intelectual.</p>
+
+<p><strong>6. Foro</strong></p>
+<p>Para dirimir quaisquer controvérsias oriundas destes termos, fica eleito o foro da Comarca de Curitiba, PR.</p>
+
+<p>Última atualização: junho de 2026.</p>
+
+<button class="ttk6_modal-close" onclick="this.closest('.modal-overlay').classList.remove('active')">Fechar</button>
+</div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  var overlays=document.querySelectorAll('.modal-overlay');
+  overlays.forEach(function(o){
+    o.addEventListener('click',function(e){
+      if(e.target===o) o.classList.remove('active');
+    });
+  });
+  var footer=document.querySelector('.footer-bottom');
+  if(footer) footer.style.visibility='visible';
+});
+</script>
+
+<footer style="text-align:center;padding:20px 8px;font-size:10px;color:#a0a0a0;margin-top:38px;border-top:1px solid #f2f2f2"><p>Memmotoday • Todos os direitos reservados © 2025. As opiniões expressas são baseadas em experiências individuais. <a href="https://memmotoday.online/" style="color:#a0a0a0;text-decoration:none">memmotoday.online</a></p></footer>
+</body>
+</html>
+
+<!-- b1cffb86bda3ac12161e0032 -->
